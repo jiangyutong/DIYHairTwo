@@ -136,7 +136,6 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nul-Xw-h1Q" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ek9-nA-NiB">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -211,6 +210,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2An-wZ-Xke">
+                                <rect key="frame" x="0.0" y="25" width="375" height="616"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <view alpha="0.80000000000000004" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fL5-2h-GY3">
                                 <rect key="frame" x="0.0" y="25" width="375" height="622"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -236,18 +239,19 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TgW-18-qMb">
+                                        <rect key="frame" x="127" y="129" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2An-wZ-Xke">
-                                <rect key="frame" x="0.0" y="25" width="375" height="616"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="kBj-5u-Se2"/>
                     </view>
                     <connections>
                         <outlet property="goLB" destination="yqB-1m-0rr" id="kvt-hL-Wwa"/>
+                        <outlet property="headimage" destination="TgW-18-qMb" id="lv8-ug-bC7"/>
                         <outlet property="imgview" destination="2An-wZ-Xke" id="ud0-su-Y5p"/>
                         <outlet property="myview" destination="fL5-2h-GY3" id="eaW-gR-nlV"/>
                         <outlet property="passwordTF" destination="I0y-C1-yui" id="MZb-gC-fxe"/>
@@ -257,7 +261,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0mo-RK-KbG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3015.1999999999998" y="-1763.568215892054"/>
+            <point key="canvasLocation" x="-3380" y="-1797"/>
         </scene>
         <!--Radio Button View Controller-->
         <scene sceneID="18G-Z1-Ip3">
@@ -321,7 +325,6 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="E5d-1D-e22" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Lld-hH-ypa">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

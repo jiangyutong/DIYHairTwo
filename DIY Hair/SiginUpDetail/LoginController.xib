@@ -72,7 +72,7 @@
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ylm-dl-1pD" customClass="PQButton" customModule="DIY_Hair" customModuleProvider="target">
                     <rect key="frame" x="40" y="613" width="295" height="44"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="登录"/>
+                    <state key="normal" title="注册"/>
                     <connections>
                         <action selector="islogin:" destination="-1" eventType="touchUpInside" id="OpY-ru-bFb"/>
                     </connections>

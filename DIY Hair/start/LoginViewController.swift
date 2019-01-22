@@ -8,9 +8,13 @@
 
 import UIKit
 import LeanCloud
+import AVOSCloudIM
 class LoginViewController: UIViewController, UITextFieldDelegate{
     
+    @IBOutlet weak var headimage: UIImageView!
     var btn: DKTransitionButton!
+    var image=["HeadPortrait1","HeadPortrait2"]
+    
     // @IBOutlet weak var btn2: UIButton!
     @IBOutlet weak var goLB: UILabel!
     @IBOutlet weak var passwordTF: UITextField!
@@ -19,7 +23,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate{
     @IBOutlet weak var imgview: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        var image1=UIImage(named:image[0])
+        headimage.image=image1
+        self.startAnimation()
+        headimage.layer.cornerRadius=headimage.frame.size.height/2
+        headimage.clipsToBounds=true
         passwordTF.delegate=self
         userTF.delegate=self
         passwordTF.returnKeyType = UIReturnKeyType.done
@@ -33,8 +41,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate{
         btn.addTarget(self, action: #selector(onTapButton(_:)), for: UIControlEvents.touchUpInside)
       //  btn.addTarget(self, action: #selector(onTapButton(_:)), for: UIControl.Event.touchUpInside)
         btn.spiner.spinnerColor = UIColor.white
-        textFieldShouldReturn(passwordTF)
-        textFieldShouldReturn(userTF)
+//        textFieldShouldReturn(passwordTF)
+//        textFieldShouldReturn(userTF)
         
         let filter = UIView()
         
@@ -54,7 +62,15 @@ class LoginViewController: UIViewController, UITextFieldDelegate{
         // Do any additional setup after loading the view.
     }
     
-    
+    func startAnimation(){
+        
+        //Scale
+        let scaleAnimate = Animate.baseAnimationWithKeyPath("transform.scale", fromValue: nil, toValue: 1.2, duration: 1.5, repeatCount: Float.infinity, timingFunction: nil)
+        scaleAnimate.autoreverses = true
+       headimage.layer.add(scaleAnimate, forKey: "transform.scale")
+        
+       
+    }
     /*
      // MARK: - Navigation
      
@@ -129,6 +145,33 @@ class LoginViewController: UIViewController, UITextFieldDelegate{
         
     }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        print("jyt")
+        if let username=userTF.text
+        {
+            let  query=AVQuery(className: "myuser")
+            query.whereKey("username", equalTo: username)
+            let temp=query.findObjects() as! [AVObject]
+            if(temp.count>0)
+            {
+                let U=temp[0]["image"] as! AVFile
+                self.headimage.image=UIImage(data: U.getData()!)
+            }
+//            let  query = LCQuery(className: "myuser")
+//            query.whereKey("username", .equalTo(username))
+//            query.find { result in
+//                switch result {
+//                case .success(let todos):
+//                    // 每一页 10 条数据，跳过了 20 条数据，因此获取的是第 3 页的数据
+//                     print("great")
+//                    guard let todo = todos.first else { return }
+//                    let U=todo.get("image") as! AVFile
+//                    self.headimage.image=UIImage(data: U.getData()!)
+//
+//                case .failure(let error):
+//                    print(error)
+//                }
+//            }
+        }
         textField.resignFirstResponder()
         return true
     }
