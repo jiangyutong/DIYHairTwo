@@ -160,6 +160,21 @@
                                 <rect key="frame" x="16" y="41" width="343" height="606"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
+<<<<<<< HEAD:DIY Hair/Base.lproj/Main.storyboard
+=======
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W40-JO-blM">
+                                        <rect key="frame" x="80" y="455" width="183" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                        <state key="normal" title="sign up">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="siginup:" destination="ZNj-JL-EIz" eventType="touchUpInside" id="j6l-f6-X0m"/>
+                                            <segue destination="kH7-Vw-qFW" kind="show" id="49R-Aa-ckh"/>
+                                        </connections>
+                                    </button>
+>>>>>>> 3341b139dcac2dc47fe1422330ff2bae54bb0dba:DIY Hair/Main.storyboard
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DIY HAIR " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i12-wL-UfJ">
                                         <rect key="frame" x="35" y="32" width="273" height="65"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -244,6 +259,7 @@
                                         <rect key="frame" x="127" y="129" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+<<<<<<< HEAD:DIY Hair/Base.lproj/Main.storyboard
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deD-fr-gsh">
                                         <rect key="frame" x="8" y="8" width="102" height="41"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -259,6 +275,14 @@
                                         <state key="normal" image="眼睛"/>
                                         <connections>
                                             <action selector="change:" destination="pgO-iV-bsq" eventType="touchUpInside" id="gzi-1P-gDA"/>
+=======
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Te9-Ec-lhf">
+                                        <rect key="frame" x="21" y="19" width="55" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="&lt;back"/>
+                                        <connections>
+                                            <segue destination="ZNj-JL-EIz" kind="show" id="Jgh-DT-7ty"/>
+>>>>>>> 08cfd7eef51e4e447082eddfa342c021027d3392:DIY Hair/Main.storyboard
                                         </connections>
                                     </button>
                                 </subviews>
@@ -279,8 +303,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0mo-RK-KbG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD:DIY Hair/Base.lproj/Main.storyboard
             <point key="canvasLocation" x="-3250" y="-1847"/>
+=======
+            <point key="canvasLocation" x="-3050" y="-1755"/>
+>>>>>>> 08cfd7eef51e4e447082eddfa342c021027d3392:DIY Hair/Main.storyboard
         </scene>
+<<<<<<< HEAD:DIY Hair/Base.lproj/Main.storyboard
         <!--View Controller-->
         <scene sceneID="m7W-eg-VL7">
             <objects>
@@ -296,10 +325,13 @@
             </objects>
             <point key="canvasLocation" x="-4124" y="-860"/>
         </scene>
+=======
+>>>>>>> 3341b139dcac2dc47fe1422330ff2bae54bb0dba:DIY Hair/Main.storyboard
         <!--Login Controller-->
         <scene sceneID="18G-Z1-Ip3">
             <objects>
                 <viewController id="kH7-Vw-qFW" customClass="LoginController" customModule="DIY_Hair" customModuleProvider="target" sceneMemberID="viewController">
+<<<<<<< HEAD:DIY Hair/Base.lproj/Main.storyboard
                     <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="ANl-Hr-4kv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -309,20 +341,39 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" alpha="0.94999998807907104" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k4q-4I-wGG">
+=======
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="8Cv-Lf-Z8F">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bizhi" translatesAutoresizingMaskIntoConstraints="NO" id="NZS-Mc-eIg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" alpha="0.94999998807907104" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zFC-qu-uyy">
+>>>>>>> 3341b139dcac2dc47fe1422330ff2bae54bb0dba:DIY Hair/Main.storyboard
                                 <rect key="frame" x="16" y="494" width="335" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+<<<<<<< HEAD:DIY Hair/Base.lproj/Main.storyboard
                             <textField opaque="NO" clipsSubviews="YES" alpha="0.94999998807907104" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f8e-Ut-FRk">
+=======
+                            <textField opaque="NO" clipsSubviews="YES" alpha="0.94999998807907104" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fY3-wB-Fux">
+>>>>>>> 3341b139dcac2dc47fe1422330ff2bae54bb0dba:DIY Hair/Main.storyboard
                                 <rect key="frame" x="16" y="437" width="335" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+<<<<<<< HEAD:DIY Hair/Base.lproj/Main.storyboard
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2lG-h5-VOd">
+=======
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sjk-i5-NMs">
+>>>>>>> 3341b139dcac2dc47fe1422330ff2bae54bb0dba:DIY Hair/Main.storyboard
                                 <rect key="frame" x="16" y="485" width="335" height="1"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -330,14 +381,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+<<<<<<< HEAD:DIY Hair/Base.lproj/Main.storyboard
                             <textField opaque="NO" clipsSubviews="YES" alpha="0.94999998807907104" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nmz-CB-E63">
+=======
+                            <textField opaque="NO" clipsSubviews="YES" alpha="0.94999998807907104" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ncK-eC-U6J">
+>>>>>>> 3341b139dcac2dc47fe1422330ff2bae54bb0dba:DIY Hair/Main.storyboard
                                 <rect key="frame" x="20" y="549" width="335" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+<<<<<<< HEAD:DIY Hair/Base.lproj/Main.storyboard
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="By4-oo-RCv">
+=======
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hif-S7-BBG">
+>>>>>>> 3341b139dcac2dc47fe1422330ff2bae54bb0dba:DIY Hair/Main.storyboard
                                 <rect key="frame" x="20" y="582" width="335" height="1"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -346,6 +405,7 @@
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
+<<<<<<< HEAD:DIY Hair/Base.lproj/Main.storyboard
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vWD-qU-xew" customClass="PQButton" customModule="DIY_Hair" customModuleProvider="target">
                                 <rect key="frame" x="40" y="613" width="295" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -355,6 +415,14 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Jj-Np-fzD">
+=======
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jf8-0h-6oA" customClass="PQButton" customModule="DIY_Hair" customModuleProvider="target">
+                                <rect key="frame" x="40" y="613" width="295" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="注册"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="69R-9a-p8h">
+>>>>>>> 3341b139dcac2dc47fe1422330ff2bae54bb0dba:DIY Hair/Main.storyboard
                                 <rect key="frame" x="16" y="532" width="335" height="1"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -362,20 +430,29 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+<<<<<<< HEAD:DIY Hair/Base.lproj/Main.storyboard
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dm4-dG-DZ9">
+=======
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3zk-8G-MFo">
+>>>>>>> 3341b139dcac2dc47fe1422330ff2bae54bb0dba:DIY Hair/Main.storyboard
                                 <rect key="frame" x="298" y="365" width="77" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="请选择地址">
                                     <color key="titleColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
+<<<<<<< HEAD:DIY Hair/Base.lproj/Main.storyboard
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aXe-NV-l90">
+=======
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jxH-g3-BbC">
+>>>>>>> 3341b139dcac2dc47fe1422330ff2bae54bb0dba:DIY Hair/Main.storyboard
                                 <rect key="frame" x="20" y="374" width="266" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+<<<<<<< HEAD:DIY Hair/Base.lproj/Main.storyboard
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ikv-NW-8i8">
                                 <rect key="frame" x="230" y="29" width="145" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -406,11 +483,50 @@
                         <outlet property="password" destination="k4q-4I-wGG" id="EG7-Oh-355"/>
                         <outlet property="tips" destination="ikv-NW-8i8" id="4GI-Xr-8qj"/>
                         <outlet property="username" destination="f8e-Ut-FRk" id="r00-Au-hfw"/>
+=======
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bp6-Xr-NIA">
+                                <rect key="frame" x="278" y="29" width="97" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.16876095529999999" green="0.68745285270000001" blue="0.83825290200000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mdu-Yn-5c9">
+                                <rect key="frame" x="271" y="403" width="104" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="&lt;back"/>
+                                <connections>
+                                    <segue destination="ZNj-JL-EIz" kind="show" id="yR3-Uw-hLN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="aqY-QR-lsM"/>
+                    </view>
+                    <connections>
+                        <outlet property="backImageView" destination="NZS-Mc-eIg" id="gRE-WK-a0q"/>
+                        <outlet property="button" destination="jf8-0h-6oA" id="N9e-ti-gRc"/>
+                        <outlet property="buttonAdress" destination="3zk-8G-MFo" id="tjJ-qX-2N1"/>
+                        <outlet property="email" destination="ncK-eC-U6J" id="mVO-M6-Yh8"/>
+                        <outlet property="label" destination="jxH-g3-BbC" id="AdT-zj-Rsa"/>
+                        <outlet property="password" destination="zFC-qu-uyy" id="4LN-hr-Gqs"/>
+                        <outlet property="tips" destination="bp6-Xr-NIA" id="35R-Ji-urm"/>
+                        <outlet property="username" destination="fY3-wB-Fux" id="ymS-Wx-vFK"/>
+>>>>>>> 3341b139dcac2dc47fe1422330ff2bae54bb0dba:DIY Hair/Main.storyboard
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UVf-pf-AsK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD:DIY Hair/Base.lproj/Main.storyboard
             <point key="canvasLocation" x="-3487" y="-1182"/>
+=======
+<<<<<<< HEAD:DIY Hair/Base.lproj/Main.storyboard
+            <point key="canvasLocation" x="-3721" y="-1124"/>
+=======
+            <point key="canvasLocation" x="-3444" y="-1087"/>
+>>>>>>> 3341b139dcac2dc47fe1422330ff2bae54bb0dba:DIY Hair/Main.storyboard
+>>>>>>> 08cfd7eef51e4e447082eddfa342c021027d3392:DIY Hair/Main.storyboard
         </scene>
         <!--View Controller-->
         <scene sceneID="wcc-Wk-Ori">
@@ -452,7 +568,11 @@
         <image name="眼睛" width="89" height="55"/>
     </resources>
     <inferredMetricsTieBreakers>
+<<<<<<< HEAD:DIY Hair/Base.lproj/Main.storyboard
         <segue reference="fLc-m2-rph"/>
+=======
+        <segue reference="yR3-Uw-hLN"/>
+>>>>>>> 08cfd7eef51e4e447082eddfa342c021027d3392:DIY Hair/Main.storyboard
         <segue reference="RNH-oe-keT"/>
     </inferredMetricsTieBreakers>
 </document>
