@@ -37,7 +37,7 @@ class CBGroupAndStreamView: UIView {
     /// 组标题 字体颜色
     public var titleTextColor : UIColor = .black
     /// 显示按钮的高度
-    public var content_height = 60
+    public var content_height = 40
     /// 上下按钮之间的间距
     public var content_y = 10
     /// 左右按钮之间的间距
@@ -51,9 +51,9 @@ class CBGroupAndStreamView: UIView {
     /// 背景选中颜色
     public var content_backSelColor : UIColor = .purple
     /// 字体大小
-    public var content_titleFont : UIFont = .systemFont(ofSize: 25)
+    public var content_titleFont : UIFont = .systemFont(ofSize: 20)
     /// 圆角
-    public var content_radius : Int = 50
+    public var content_radius : Int = 20
     /// 是否单选，默认 true 是单选
     public var isSingle : Bool = true
     /// 是否设置默认选中 默认 true 默认选中

@@ -38,10 +38,10 @@ class StartViewController: UIViewController {
     }
     
     
-    @IBAction func siginup(_ sender: Any) {
-     //let ratingVC = RaingViewController()
-        present(LoginController(), animated: true, completion: nil)
-    }
+//    @IBAction func siginup(_ sender: Any) {
+//     //let ratingVC = RaingViewController()
+//        present(LoginController(), animated: true, completion: nil)
+//    }
 }
 
 
