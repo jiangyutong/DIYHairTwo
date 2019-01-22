@@ -14,6 +14,9 @@ class LoginController: BaseViewController,CBGroupAndStreamViewDelegate {
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var email: UITextField!
     
+    var imagenames=["HeadPortrait1","HeadPortrait2","HeadPortrait3","HeadPortrait4","HeadPortrait5","HeadPortrait6","HeadPortrait7"]
+   
+    
     @IBOutlet weak var tips: UILabel!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var buttonAdress: UIButton!
@@ -31,6 +34,7 @@ class LoginController: BaseViewController,CBGroupAndStreamViewDelegate {
     var mytype:String?
     override func viewDidLoad() {
         super.viewDidLoad()
+       
         let resetBut = UIButton.init(type: .custom)
         resetBut.setTitle("重置", for: .normal)
         resetBut.frame = CGRect(x: 10, y: 10, width: 40, height: 40)
@@ -169,8 +173,13 @@ class LoginController: BaseViewController,CBGroupAndStreamViewDelegate {
     }
 
     @IBAction func islogin(_ sender: Any) {
+         let a = Int(arc4random()%7)
+        var img=UIImage(named: self.imagenames[a])
+        let data=UIImagePNGRepresentation(img!)
         if let type=self.mytype,let username=self.username.text,let password=self.password.text,let email=self.email.text,let adress = self.label.text
         {
+            
+            
             if(validateEmail(email: email) == true)
             {
                   islogin=true
@@ -205,6 +214,21 @@ class LoginController: BaseViewController,CBGroupAndStreamViewDelegate {
                     LCUser.logIn(username: self.username.text!, password: self.password.text!) { result in
                         switch result {
                         case .success(let user):
+                            let file=AVFile(data: data!)
+                            let obj=AVObject(className: "myuser")
+                            obj.setObject(file, forKey: "image")
+                            obj.setObject(self.username.text!, forKey: "username")
+                            obj.setObject(self.password.text!, forKey: "password")
+                            obj.setObject(self.label.text!, forKey: "email")
+                            obj.setObject(self.mytype, forKey: "type")
+                            obj.saveInBackground({ (resultbool, error) in
+                                if(resultbool){
+                                    print("cg****************")
+                                }else{
+                                    print("sb****************")
+                                }
+                            })
+
                             let currentUser = LCUser.current!
                             
                             currentUser.set("adrees", value:self.label.text!)
@@ -249,4 +273,9 @@ class LoginController: BaseViewController,CBGroupAndStreamViewDelegate {
         
     }
    
+    @IBAction func back(_ sender: Any) {
+        print("back******")
+        let controller = StartViewController()
+        self.present(controller, animated: true, completion: nil)
+    }
 }
