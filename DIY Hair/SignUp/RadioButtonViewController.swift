@@ -16,16 +16,16 @@ class RadioButtonViewController: UIViewController {
         
         let resetBut = UIButton.init(type: .custom)
         resetBut.setTitle("重置", for: .normal)
-        resetBut.frame = CGRect(x: 10, y: 10, width: 40, height: 40)
-        resetBut.titleLabel?.font = UIFont.systemFont(ofSize: 14)
+        resetBut.frame = CGRect(x: 10, y: 10, width: 30, height: 30)
+        resetBut.titleLabel?.font = UIFont.systemFont(ofSize: 10)
         resetBut.setTitleColor(UIColor.brown, for: .normal)
         self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: resetBut)
         resetBut.addTarget(self, action: #selector(resetLabGroup), for: .touchUpInside)
         
         let confirmBut = UIButton.init(type: .custom)
         confirmBut.setTitle("确定", for: .normal)
-        confirmBut.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
-        confirmBut.titleLabel?.font = UIFont.systemFont(ofSize: 14)
+        confirmBut.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
+        confirmBut.titleLabel?.font = UIFont.systemFont(ofSize: 10)
         confirmBut.setTitleColor(UIColor.brown, for: .normal)
         self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(customView: confirmBut)
         confirmBut.addTarget(self, action: #selector(confirmLabGroup), for: .touchUpInside)
@@ -33,7 +33,7 @@ class RadioButtonViewController: UIViewController {
         let titleArr = [""]
         let contentArr = [["理发师","顾客"]]
         
-        labGroup = CBGroupAndStreamView.init(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height))
+        labGroup = CBGroupAndStreamView.init(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width-100, height: UIScreen.main.bounds.size.height-100))
         labGroup.titleTextFont = .systemFont(ofSize: 14)
         labGroup.titleLabHeight = 30;
         labGroup.titleTextColor = .blue
