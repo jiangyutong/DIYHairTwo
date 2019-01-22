@@ -25,7 +25,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate{
         super.viewDidLoad()
         var image1=UIImage(named:image[0])
         headimage.image=image1
-        self.startAnimation()
+        startAnimation()
         headimage.layer.cornerRadius=headimage.frame.size.height/2
         headimage.clipsToBounds=true
         passwordTF.delegate=self
@@ -72,6 +72,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate{
         
        
     }
+ 
     /*
      // MARK: - Navigation
      
@@ -149,6 +150,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate{
         print("jyt")
         if let username=userTF.text
         {
+            startAnimation()
             let  query=AVQuery(className: "myuser")
             query.whereKey("username", equalTo: username)
             let temp=query.findObjects() as! [AVObject]

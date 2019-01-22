@@ -118,6 +118,7 @@ class LoginController: BaseViewController,CBGroupAndStreamViewDelegate {
         self.view.addSubview(buttonAdress)
         self.view.bringSubview(toFront:backbtn)
     }
+    
     func currentSelValueWithDelegate(valueStr: String, index: Int, groupId: Int) {
         print("\(valueStr) index = \(index), groupid = \(groupId)")
     }
