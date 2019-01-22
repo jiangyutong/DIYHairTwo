@@ -244,6 +244,23 @@
                                         <rect key="frame" x="127" y="129" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deD-fr-gsh">
+                                        <rect key="frame" x="8" y="8" width="102" height="41"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="&lt;back"/>
+                                        <connections>
+                                            <segue destination="ZNj-JL-EIz" kind="show" id="fLc-m2-rph"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cff-nQ-JK4">
+                                        <rect key="frame" x="300" y="378" width="36" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="眼睛"/>
+                                        <connections>
+                                            <action selector="change:" destination="pgO-iV-bsq" eventType="touchUpInside" id="gzi-1P-gDA"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </view>
                         </subviews>
@@ -262,7 +279,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0mo-RK-KbG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3380" y="-1797"/>
+            <point key="canvasLocation" x="-3250" y="-1847"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="m7W-eg-VL7">
@@ -277,7 +294,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b3M-8p-ovx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3436" y="-926"/>
+            <point key="canvasLocation" x="-4124" y="-860"/>
         </scene>
         <!--Login Controller-->
         <scene sceneID="18G-Z1-Ip3">
@@ -366,12 +383,22 @@
                                 <color key="textColor" red="1" green="0.22709714110000001" blue="0.01364533745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iud-gm-HrQ">
+                                <rect key="frame" x="298" y="20" width="77" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="back&gt;"/>
+                                <connections>
+                                    <segue destination="ZNj-JL-EIz" kind="show" id="yna-ZZ-YxH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="k5d-T7-gKF"/>
                     </view>
                     <connections>
                         <outlet property="backImageView" destination="uls-Wo-PJq" id="Vd7-vz-0gP"/>
+                        <outlet property="backbtn" destination="Iud-gm-HrQ" id="6qz-oy-QJS"/>
                         <outlet property="button" destination="vWD-qU-xew" id="hip-cP-pte"/>
                         <outlet property="buttonAdress" destination="Dm4-dG-DZ9" id="iKQ-A2-4wZ"/>
                         <outlet property="email" destination="Nmz-CB-E63" id="qee-uV-q57"/>
@@ -383,7 +410,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UVf-pf-AsK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3721" y="-1124"/>
+            <point key="canvasLocation" x="-3487" y="-1182"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="wcc-Wk-Ori">
@@ -422,8 +449,10 @@
     <resources>
         <image name="bizhi" width="1080" height="1920"/>
         <image name="defaultPhoto" width="540" height="540"/>
+        <image name="眼睛" width="89" height="55"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="fLc-m2-rph"/>
         <segue reference="RNH-oe-keT"/>
     </inferredMetricsTieBreakers>
 </document>

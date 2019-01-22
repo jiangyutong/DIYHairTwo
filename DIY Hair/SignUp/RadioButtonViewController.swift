@@ -33,7 +33,7 @@ class RadioButtonViewController: UIViewController {
         let titleArr = [""]
         let contentArr = [["理发师","顾客"]]
         
-        labGroup = CBGroupAndStreamView.init(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height))
+        labGroup = CBGroupAndStreamView.init(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width-200, height: UIScreen.main.bounds.size.height))
         labGroup.titleTextFont = .systemFont(ofSize: 14)
         labGroup.titleLabHeight = 30;
         labGroup.titleTextColor = .blue

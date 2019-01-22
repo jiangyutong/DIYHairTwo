@@ -30,6 +30,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate{
         headimage.clipsToBounds=true
         passwordTF.delegate=self
         userTF.delegate=self
+        passwordTF.isSecureTextEntry = true
         passwordTF.returnKeyType = UIReturnKeyType.done
         userTF.returnKeyType = UIReturnKeyType.done
         btn = DKTransitionButton(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width - 100, height: 44))
@@ -174,6 +175,20 @@ class LoginViewController: UIViewController, UITextFieldDelegate{
         }
         textField.resignFirstResponder()
         return true
+    }
+    
+    @IBAction func change(_ sender: Any) {
+        if(passwordTF.isSecureTextEntry == true)
+        {
+            print("hhhhh********")
+            passwordTF.isSecureTextEntry = false
+           
+        }
+        else
+        {
+             print("ccc********")
+            passwordTF.isSecureTextEntry = true
+        }
     }
 }
 

@@ -14,6 +14,7 @@ class LoginController: BaseViewController,CBGroupAndStreamViewDelegate {
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var email: UITextField!
     
+    @IBOutlet weak var backbtn: UIButton!
     var imagenames=["HeadPortrait1","HeadPortrait2","HeadPortrait3","HeadPortrait4","HeadPortrait5","HeadPortrait6","HeadPortrait7"]
     
     
@@ -115,7 +116,7 @@ class LoginController: BaseViewController,CBGroupAndStreamViewDelegate {
         //
         self.view.addSubview(label)
         self.view.addSubview(buttonAdress)
-        
+        self.view.bringSubview(toFront:backbtn)
     }
     func currentSelValueWithDelegate(valueStr: String, index: Int, groupId: Int) {
         print("\(valueStr) index = \(index), groupid = \(groupId)")

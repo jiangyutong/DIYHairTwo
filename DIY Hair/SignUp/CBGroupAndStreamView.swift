@@ -97,7 +97,7 @@ class CBGroupAndStreamView: UIView {
     //MARK:----private
     private let scrollView : UIScrollView = {
         let scrollview = UIScrollView()
-        scrollview.frame = CGRect(x: 10, y: 10, width:300, height:200)
+        scrollview.frame = CGRect(x: 10, y: 10, width:200, height:200)
         scrollview.backgroundColor = UIColor.clear
         scrollview.showsVerticalScrollIndicator = false
         scrollview.showsHorizontalScrollIndicator = false
@@ -142,7 +142,7 @@ class CBGroupAndStreamView: UIView {
             frameRect = setupGroupAndStream(content: contetnArr[index] as! Array<Any>, titleStr: title, currFrame: frameRect, groupId: index)
         }
         //设置滚动范围
-        scrollView.contentSize = CGSize(width: UIScreen.main.bounds.width, height: frameRect.size.height + frameRect.origin.y + 20)
+        scrollView.contentSize = CGSize(width: UIScreen.main.bounds.width-200, height: frameRect.size.height + frameRect.origin.y + 20)
     }
     //MARK:----设置数据源，创建
     func setupGroupAndStream(content : Array<Any>, titleStr : String, currFrame : CGRect, groupId : Int) -> CGRect{
