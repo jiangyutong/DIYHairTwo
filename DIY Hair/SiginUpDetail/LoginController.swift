@@ -16,7 +16,11 @@ class LoginController: BaseViewController,CBGroupAndStreamViewDelegate {
     
     @IBOutlet weak var backbtn: UIButton!
     var imagenames=["HeadPortrait1","HeadPortrait2","HeadPortrait3","HeadPortrait4","HeadPortrait5","HeadPortrait6","HeadPortrait7"]
+<<<<<<< HEAD
     
+=======
+   
+>>>>>>> ba69eb6de9aaf0c8746fcf0982458f9422a7b42b
     
     @IBOutlet weak var tips: UILabel!
     @IBOutlet weak var password: UITextField!
@@ -35,7 +39,11 @@ class LoginController: BaseViewController,CBGroupAndStreamViewDelegate {
     var mytype:String?
     override func viewDidLoad() {
         super.viewDidLoad()
+<<<<<<< HEAD
         
+=======
+       
+>>>>>>> ba69eb6de9aaf0c8746fcf0982458f9422a7b42b
         let resetBut = UIButton.init(type: .custom)
         resetBut.setTitle("重置", for: .normal)
         resetBut.frame = CGRect(x: 10, y: 10, width: 40, height: 40)
@@ -175,7 +183,11 @@ class LoginController: BaseViewController,CBGroupAndStreamViewDelegate {
     }
     
     @IBAction func islogin(_ sender: Any) {
+<<<<<<< HEAD
         let a = Int(arc4random()%7)
+=======
+         let a = Int(arc4random()%7)
+>>>>>>> ba69eb6de9aaf0c8746fcf0982458f9422a7b42b
         var img=UIImage(named: self.imagenames[a])
         let data=UIImagePNGRepresentation(img!)
         if let type=self.mytype,let username=self.username.text,let password=self.password.text,let email=self.email.text,let adress = self.label.text
@@ -230,7 +242,11 @@ class LoginController: BaseViewController,CBGroupAndStreamViewDelegate {
                                     print("sb****************")
                                 }
                             })
+<<<<<<< HEAD
                             
+=======
+
+>>>>>>> ba69eb6de9aaf0c8746fcf0982458f9422a7b42b
                             let currentUser = LCUser.current!
                             
                             currentUser.set("adrees", value:self.label.text!)
@@ -274,7 +290,11 @@ class LoginController: BaseViewController,CBGroupAndStreamViewDelegate {
         return emailTest.evaluate(with: email)
         
     }
+<<<<<<< HEAD
     
+=======
+   
+>>>>>>> ba69eb6de9aaf0c8746fcf0982458f9422a7b42b
     @IBAction func back(_ sender: Any) {
         print("back******")
         let controller = StartViewController()
