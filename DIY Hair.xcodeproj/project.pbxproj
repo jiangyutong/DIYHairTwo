@@ -41,7 +41,6 @@
 		F4D9705521F4B9C900E0A65F /* PQButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D9705021F4B9C800E0A65F /* PQButton.swift */; };
 		F4D9705621F4B9C900E0A65F /* PQTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D9705121F4B9C800E0A65F /* PQTransition.swift */; };
 		F4D9705721F4B9C900E0A65F /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D9705221F4B9C800E0A65F /* LoginController.swift */; };
-		F4D9705821F4B9C900E0A65F /* LoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4D9705321F4B9C900E0A65F /* LoginController.xib */; };
 		F4D9705A21F4BA3700E0A65F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D9705921F4BA3600E0A65F /* BaseViewController.swift */; };
 		F4D9706721F4BC3000E0A65F /* ScreenShot.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D9706521F4BC2F00E0A65F /* ScreenShot.swift */; };
 		F4D9706821F4BC3000E0A65F /* Animate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D9706621F4BC2F00E0A65F /* Animate.swift */; };
@@ -109,7 +108,6 @@
 		F4D9705021F4B9C800E0A65F /* PQButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PQButton.swift; sourceTree = "<group>"; };
 		F4D9705121F4B9C800E0A65F /* PQTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PQTransition.swift; sourceTree = "<group>"; };
 		F4D9705221F4B9C800E0A65F /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
-		F4D9705321F4B9C900E0A65F /* LoginController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginController.xib; sourceTree = "<group>"; };
 		F4D9705921F4BA3600E0A65F /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		F4D9706521F4BC2F00E0A65F /* ScreenShot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenShot.swift; sourceTree = "<group>"; };
 		F4D9706621F4BC2F00E0A65F /* Animate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animate.swift; sourceTree = "<group>"; };
@@ -282,7 +280,6 @@
 			children = (
 				F4D9705921F4BA3600E0A65F /* BaseViewController.swift */,
 				F4D9705221F4B9C800E0A65F /* LoginController.swift */,
-				F4D9705321F4B9C900E0A65F /* LoginController.xib */,
 				F4D9704F21F4B9C700E0A65F /* LoginSuccessController.swift */,
 				F4D9705021F4B9C800E0A65F /* PQButton.swift */,
 				F4D9705121F4B9C800E0A65F /* PQTransition.swift */,
@@ -412,7 +409,6 @@
 				EE53D475217B203A00959AA0 /* Main.storyboard in Resources */,
 				EE53D477217B25FF00959AA0 /* Assets.xcassets in Resources */,
 				F476DB1B21F321DA00CB3531 /* timg8.gif in Resources */,
-				F4D9705821F4B9C900E0A65F /* LoginController.xib in Resources */,
 				F414F8B621F4CE0D00FB914D /* area.plist in Resources */,
 				EE53D474217B203A00959AA0 /* LaunchScreen.storyboard in Resources */,
 			);
